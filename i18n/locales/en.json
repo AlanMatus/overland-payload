@@ -6,5 +6,67 @@
   "home": {
     "title": "Overland Rig Builder & Payload Calculator",
     "subtitle": "Pick a vehicle, add your gear, and see in real time whether your rig stays under its legal and safe weight limits."
+  },
+  "builder": {
+    "vehicle": "Vehicle",
+    "chooseVehicle": "Choose a vehicle",
+    "curb": "Curb weight",
+    "gvwr": "GVWR",
+    "payloadCapacity": "Payload capacity",
+    "crewAndLiquids": "Crew & liquids",
+    "gear": "Gear"
+  },
+  "controls": {
+    "passengers": "Passengers",
+    "avgPassengerWeight": "Avg. passenger weight",
+    "fuel": "Fuel",
+    "fuelHint": "kg of fuel on board",
+    "water": "Water",
+    "waterHint": "kg of water on board"
+  },
+  "gear": {
+    "add": "Add",
+    "added": "Added",
+    "estimated": "Est.",
+    "category": {
+      "recovery": "Recovery",
+      "camping": "Camping",
+      "storage": "Storage",
+      "protection": "Protection",
+      "tyres": "Tyres",
+      "water": "Water",
+      "fuel": "Fuel",
+      "other": "Other"
+    },
+    "mount": {
+      "roof": "Roof",
+      "front": "Front",
+      "rear": "Rear",
+      "interior": "Interior",
+      "underbody": "Underbody"
+    }
+  },
+  "payload": {
+    "title": "Payload",
+    "totalLaden": "Total laden weight",
+    "ofGvwr": "of {gvwr} GVWR",
+    "remaining": "{amount} of payload remaining",
+    "overTitle": "Over the weight limit",
+    "overBy": "You are {amount} over GVWR. Remove gear or reduce load.",
+    "barLabel": "Percentage of GVWR used",
+    "status": {
+      "under": "Within limit",
+      "near": "Near limit",
+      "over": "Overloaded"
+    }
+  },
+  "axle": {
+    "title": "Axle load",
+    "estimate": "Estimate",
+    "front": "Front axle",
+    "rear": "Rear axle",
+    "max": "max {amount}",
+    "over": "Over axle limit",
+    "disclaimer": "Rough estimate from a fixed weight split — not a substitute for a weighbridge."
   }
 }
