@@ -26,7 +26,7 @@
   {
     "id": "land-rover-defender-90",
     "make": "Land Rover",
-    "model": "Defender",
+    "model": "Defender (L663)",
     "variant": "L663 D300",
     "body": "90 · 3-door",
     "curbWeightKg": 2316,
@@ -37,7 +37,7 @@
   {
     "id": "land-rover-defender-110",
     "make": "Land Rover",
-    "model": "Defender",
+    "model": "Defender (L663)",
     "variant": "L663 D300",
     "body": "110 · 5-door",
     "curbWeightKg": 2415,
@@ -82,7 +82,7 @@
   {
     "id": "jeep-wrangler-2door",
     "make": "Jeep",
-    "model": "Wrangler",
+    "model": "Wrangler JL",
     "variant": "JL 2.2 D Rubicon",
     "body": "2-door SWB",
     "curbWeightKg": 1990,
@@ -93,7 +93,7 @@
   {
     "id": "jeep-wrangler-rubicon",
     "make": "Jeep",
-    "model": "Wrangler",
+    "model": "Wrangler JL",
     "variant": "Unlimited JL 2.2 D Rubicon",
     "body": "Unlimited · 4-door",
     "curbWeightKg": 2122,
@@ -271,5 +271,49 @@
     "gvwrKg": 2540,
     "confidence": "estimated",
     "notes": "3rd-gen Tacoma TRD Off-Road Double Cab 4x4 (2018), US market (NOT EU-sold), converted (0.4536). Curb ~4425 lb = 2007 kg, GVWR ~5600 lb = 2540 kg. Axle splits not published. Source: jdpower.com / kbb.com."
+  },
+  {
+    "id": "ford-bronco-2door",
+    "make": "Ford",
+    "model": "Bronco",
+    "variant": "Badlands 2.3 EcoBoost (US)",
+    "body": "2-door",
+    "curbWeightKg": 2131,
+    "gvwrKg": 2513,
+    "confidence": "confident",
+    "notes": "6th-gen Bronco 2-door Badlands 2.3 EcoBoost, US market (NOT EU-sold), converted (0.4536). Curb 4698 lb = 2131 kg, GVWR 5540 lb = 2513 kg. Axle splits not published. Source: guideautoweb.com / cars.com."
+  },
+  {
+    "id": "ford-bronco-4door",
+    "make": "Ford",
+    "model": "Bronco",
+    "variant": "Badlands 2.7 V6 (US)",
+    "body": "4-door",
+    "curbWeightKg": 2239,
+    "gvwrKg": 2803,
+    "confidence": "confident",
+    "notes": "6th-gen Bronco 4-door Badlands 2.7 EcoBoost V6, US market (NOT EU-sold), converted (0.4536). Curb 4936 lb = 2239 kg, GVWR 6180 lb = 2803 kg. Axle splits not published. Source: guideautoweb.com / thebronconation.com."
+  },
+  {
+    "id": "jeep-wrangler-jk-2door",
+    "make": "Jeep",
+    "model": "Wrangler JK",
+    "variant": "2.8 CRD Rubicon (EU)",
+    "body": "2-door",
+    "curbWeightKg": 1858,
+    "gvwrKg": 2370,
+    "confidence": "estimated",
+    "notes": "Wrangler JK 2-door 2.8 CRD Rubicon auto (2007–2018), EU. Curb 1858 kg (confident, ultimatespecs); GVWR ~2370 kg estimated (no clean 2-door-specific source; 4-door figures don't apply). Axle limits not published. Source: ultimatespecs.com."
+  },
+  {
+    "id": "jeep-wrangler-jk-4door",
+    "make": "Jeep",
+    "model": "Wrangler JK",
+    "variant": "Unlimited 2.8 CRD Rubicon (EU)",
+    "body": "Unlimited 4-door",
+    "curbWeightKg": 2128,
+    "gvwrKg": 2585,
+    "confidence": "confident",
+    "notes": "Wrangler JK Unlimited 2.8 CRD (2007–2018), EU. Curb 2128 kg, GVW 2585 kg, payload 457 kg (auto-data lists 1980/2505 for a different spec year). Axle limits not published. Source: encycarpedia.com / auto-data.net."
   }
 ]

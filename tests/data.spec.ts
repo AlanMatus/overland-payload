@@ -43,8 +43,14 @@ describe('vehicle seed data', () => {
       const key = `${v.make} ${v.model}`
       byModel.set(key, [...(byModel.get(key) ?? []), v])
     }
-    // Defender, Wrangler and Jimny each ship more than one body.
-    for (const model of ['Land Rover Defender', 'Jeep Wrangler', 'Suzuki Jimny']) {
+    // These models each ship more than one body variant.
+    for (const model of [
+      'Land Rover Defender (L663)',
+      'Jeep Wrangler JL',
+      'Jeep Wrangler JK',
+      'Suzuki Jimny',
+      'Ford Bronco'
+    ]) {
       const variants = byModel.get(model) ?? []
       expect(variants.length, model).toBeGreaterThan(1)
       const bodies = variants.map((v) => v.body)
