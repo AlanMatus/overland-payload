@@ -3,124 +3,117 @@
     "id": "toyota-land-cruiser-300",
     "make": "Toyota",
     "model": "Land Cruiser",
-    "variant": "300 Series",
-    "curbWeightKg": 2630,
-    "gvwrKg": 3280,
-    "frontAxleMaxKg": 1600,
-    "rearAxleMaxKg": 2000,
+    "variant": "300 Series 3.3 V6 D",
+    "curbWeightKg": 2655,
+    "gvwrKg": 3230,
+    "frontAxleMaxKg": 1630,
+    "rearAxleMaxKg": 1930,
     "confidence": "estimated",
-    "notes": "Figures vary by trim/market; based on typical 300-series diesel specs."
+    "notes": "LC300 VX 3.3 V6 twin-turbo diesel (export/EMEA; diesel is grey-import in most EU markets). Axle figures from export spec aggregation, cross-checked vs Toyota AU. Source: automobile-catalog.com / toyota.com.au."
   },
   {
     "id": "toyota-land-cruiser-70",
     "make": "Toyota",
     "model": "Land Cruiser",
-    "variant": "70 Series",
-    "curbWeightKg": 2200,
-    "gvwrKg": 3060,
-    "frontAxleMaxKg": 1480,
-    "rearAxleMaxKg": 1900,
-    "confidence": "estimated",
-    "notes": "Wagon/troop-carrier vary widely; estimated mid-spec."
+    "variant": "76 Wagon GXL 2.8 D (AU)",
+    "curbWeightKg": 2355,
+    "gvwrKg": 3510,
+    "confidence": "confident",
+    "notes": "2024 LC76 Wagon GXL 2.8 D, AUSTRALIA market (not sold new in EU). GVM 3510 kg, kerb ~2355 kg. Axle limits not published. Source: carsguide.com.au / toyota.com.au."
   },
   {
     "id": "land-rover-defender-110",
     "make": "Land Rover",
     "model": "Defender 110",
-    "variant": "L663 (2020+)",
-    "curbWeightKg": 2300,
-    "gvwrKg": 3220,
-    "frontAxleMaxKg": 1620,
+    "variant": "L663 D300",
+    "curbWeightKg": 2415,
+    "gvwrKg": 3175,
     "rearAxleMaxKg": 1900,
     "confidence": "estimated",
-    "notes": "New-gen Defender; engine choice shifts curb weight notably."
+    "notes": "Defender 110 (L663) D300 3.0 I6 MHEV diesel, EU/UK. Kerb from cars-data, GVW 3175 kg standard L663 110, rear axle ~1900 kg (owner/forum data); front axle not sourced. Source: cars-data.com / Land Rover L663 tech spec."
   },
   {
     "id": "toyota-hilux-dc",
     "make": "Toyota",
     "model": "Hilux",
-    "variant": "Double Cab",
-    "curbWeightKg": 2095,
-    "gvwrKg": 3050,
-    "frontAxleMaxKg": 1480,
-    "rearAxleMaxKg": 1850,
-    "confidence": "estimated",
-    "notes": "Typical 2.8 diesel double-cab; payload often ~1000 kg headline."
+    "variant": "Double Cab 2.8 D-4D Invincible",
+    "curbWeightKg": 2212,
+    "gvwrKg": 3210,
+    "confidence": "confident",
+    "notes": "Hilux Double Cab 2.8 D-4D 4WD Invincible, EU/UK. GVW 3210 kg, kerb ~2212 kg, payload ~1010 kg. Axle limits not published. Source: ultimatespecs.com / Toyota UK tech specs."
   },
   {
     "id": "nissan-patrol-y61",
     "make": "Nissan",
     "model": "Patrol",
-    "variant": "Y61 / GU",
-    "curbWeightKg": 2520,
-    "gvwrKg": 3300,
+    "variant": "Y61/GU 4.8 LWB (AU/ME)",
+    "curbWeightKg": 2300,
+    "gvwrKg": 3060,
     "confidence": "estimated",
-    "notes": "Long-running platform; axle limits omitted (insufficiently confident)."
+    "notes": "Patrol GU/Y61 LWB Wagon 4.8 petrol, AU / Middle East (Y61 long out of EU sale). GVM 3060 kg standard; kerb ~2300 kg (trim-dependent). Source: statewide4x4.com.au / patrol4x4.com."
   },
   {
     "id": "ford-ranger-wildtrak",
     "make": "Ford",
     "model": "Ranger",
-    "variant": "Wildtrak (T6.2)",
-    "curbWeightKg": 2250,
-    "gvwrKg": 3230,
-    "frontAxleMaxKg": 1480,
-    "rearAxleMaxKg": 1950,
-    "confidence": "estimated",
-    "notes": "Next-gen Ranger; figures approximate for 2.0 bi-turbo."
+    "variant": "Wildtrak 2.0 EcoBlue bi-turbo",
+    "curbWeightKg": 2388,
+    "gvwrKg": 3280,
+    "confidence": "confident",
+    "notes": "2023+ Ranger Wildtrak Double Cab 2.0 EcoBlue bi-turbo auto 4x4, EU/UK. GVW 3280 kg, kerb ~2388 kg, payload ~985 kg. EU axle split not published (AU-only). Source: UK Ford Ranger spec sheet / ultimatespecs.com."
   },
   {
     "id": "jeep-wrangler-rubicon",
     "make": "Jeep",
     "model": "Wrangler",
-    "variant": "JL Rubicon Unlimited",
-    "curbWeightKg": 2060,
-    "gvwrKg": 2812,
-    "confidence": "estimated",
-    "notes": "4-door JL; low payload headroom is a known constraint."
+    "variant": "Unlimited JL 2.2 D Rubicon",
+    "curbWeightKg": 2122,
+    "gvwrKg": 2630,
+    "confidence": "confident",
+    "notes": "Wrangler JL Unlimited 2.2 MultiJet diesel Rubicon (4-door), EU homologation. Kerb 2122 kg, GVWR 2630 kg (low payload headroom). Axle limits not published. Source: automoli.com / ultimatespecs.com."
   },
   {
     "id": "vw-transporter-t6",
     "make": "Volkswagen",
     "model": "Transporter",
-    "variant": "T6.1 (van)",
+    "variant": "T6.1 2.0 TDI (T32, 3.2t)",
     "curbWeightKg": 2000,
-    "gvwrKg": 3080,
-    "frontAxleMaxKg": 1610,
-    "rearAxleMaxKg": 1720,
+    "gvwrKg": 3200,
+    "frontAxleMaxKg": 1600,
+    "rearAxleMaxKg": 1850,
     "confidence": "estimated",
-    "notes": "Transporter-class van; many GVWR options (2.8t–3.2t) exist."
+    "notes": "T6.1 panel van 2.0 TDI, 3200 kg (T32) class, EU/UK. GVWR range 2.8–3.2 t; kerb ~2000 kg estimated for heavier build. Axle maxima from SwissVans weight guide. Source: vehiclesizes.com / swissvans.com."
   },
   {
     "id": "mercedes-sprinter-4x4",
     "make": "Mercedes-Benz",
     "model": "Sprinter",
-    "variant": "319 4x4 (van)",
-    "curbWeightKg": 2500,
+    "variant": "319 CDI 4x4 (3.5t)",
+    "curbWeightKg": 2125,
     "gvwrKg": 3500,
-    "frontAxleMaxKg": 1700,
-    "rearAxleMaxKg": 2100,
-    "confidence": "estimated",
-    "notes": "Common camper-conversion base; heavier-GVWR variants exist."
+    "confidence": "confident",
+    "notes": "Sprinter 319 CDI 4WD panel van, 3500 kg GVWR class, EU. Kerb 2125 kg, payload ~1675 kg (heavier-GVWR variants exist). Axle limits not listed. Source: truck1.eu technical data."
   },
   {
     "id": "toyota-4runner",
     "make": "Toyota",
     "model": "4Runner",
-    "variant": "5th gen",
-    "curbWeightKg": 2155,
-    "gvwrKg": 2812,
-    "confidence": "estimated",
-    "notes": "North-American market; axle limits omitted."
+    "variant": "5th gen TRD Off-Road (US)",
+    "curbWeightKg": 1996,
+    "gvwrKg": 2767,
+    "confidence": "confident",
+    "notes": "2020 4Runner TRD Off-Road 4WD, US market (NOT sold in EU). Curb 4400 lb = 1996 kg, GVWR 6100 lb = 2767 kg. No clean front/rear GAWR split published. Source: cars.com specs."
   },
   {
     "id": "suzuki-jimny",
     "make": "Suzuki",
     "model": "Jimny",
-    "variant": "GJ (2018+)",
+    "variant": "GJ 1.5 (2018+, 4-seat)",
     "curbWeightKg": 1135,
     "gvwrKg": 1435,
+    "frontAxleMaxKg": 680,
+    "rearAxleMaxKg": 880,
     "confidence": "estimated",
-    "notes": "Very small payload (~300 kg); easy to overload — good edge case."
+    "notes": "Jimny GJ 1.5 (4-seat), EU. GVWR 1435 kg, axles 680 front / 880 rear; kerb ~1135 kg (sources span 1075–1165 kg). Very small payload — easy to overload. Source: carfolio.com / German Jimny GJ data."
   }
 ]

@@ -1,301 +1,326 @@
 [
   {
     "id": "winch-electric",
-    "name": "Electric winch (~9.5k lb)",
+    "name": "Warn VR EVO 10-S winch",
     "category": "recovery",
-    "weightKg": 30,
+    "weightKg": 32.8,
     "mount": "front",
-    "confidence": "estimated",
-    "notes": "Includes mounting plate; varies 25–35 kg by model."
+    "confidence": "confident",
+    "notes": "Warn VR EVO 10-S, 10,000 lb, synthetic rope; 72.4 lb total. Source: warn.com."
   },
   {
     "id": "recovery-kit",
-    "name": "Recovery kit (straps, shackles, gloves)",
+    "name": "ARB Essentials Recovery Kit (RK11A)",
     "category": "recovery",
-    "weightKg": 8,
+    "weightKg": 11.3,
     "mount": "interior",
-    "confidence": "estimated"
+    "confidence": "confident",
+    "notes": "ARB RK11A (snatch strap, tree protector, shackles, snatch block, gloves, bag); ~25 lb. Source: store.arbusa.com."
   },
   {
     "id": "traction-boards",
-    "name": "Traction boards (pair)",
+    "name": "MAXTRAX MKII recovery boards (pair)",
     "category": "recovery",
-    "weightKg": 4,
+    "weightKg": 6.8,
     "mount": "rear",
     "confidence": "confident",
-    "notes": "MaxTrax-class recovery boards ~4 kg/pair."
+    "notes": "MAXTRAX MKII, set of 2; 15 lb / 6.8 kg per pair. Source: rei.com."
   },
   {
     "id": "hi-lift-jack",
-    "name": "Hi-lift jack (48\")",
+    "name": "Hi-Lift HL-485 48\" all-cast jack",
     "category": "recovery",
-    "weightKg": 13,
+    "weightKg": 14.1,
     "mount": "rear",
-    "confidence": "confident"
+    "confidence": "confident",
+    "notes": "Hi-Lift HL-485 48\" all-cast; 31 lb / 14.1 kg. Source: hi-lift.com."
   },
   {
     "id": "air-compressor",
-    "name": "Portable air compressor",
+    "name": "ARB CKMTA12 twin air compressor",
     "category": "recovery",
-    "weightKg": 9,
+    "weightKg": 7.9,
     "mount": "interior",
-    "confidence": "estimated"
+    "confidence": "confident",
+    "notes": "ARB twin-motor onboard 12V compressor CKMTA12; 17.4 lb / 7.9 kg. Source: store.arbusa.com."
   },
   {
     "id": "snatch-block-kit",
-    "name": "Snatch block & soft shackle kit",
+    "name": "ARB Ultra Light snatch block + soft shackle kit",
     "category": "recovery",
-    "weightKg": 2,
+    "weightKg": 2.5,
     "mount": "interior",
-    "confidence": "estimated"
+    "confidence": "estimated",
+    "notes": "ARB Ultra Light snatch block (20,000 lb, ~5.3 lb) + soft shackle; combined ~2.5 kg estimate. Source: store.arbusa.com."
   },
   {
     "id": "rtt-hardshell",
-    "name": "Hard-shell roof top tent",
+    "name": "iKamper Skycamp 3.0 hard-shell tent",
     "category": "camping",
-    "weightKg": 65,
+    "weightKg": 74.8,
     "mount": "roof",
-    "confidence": "estimated",
-    "notes": "Aluminium hard-shell; range 55–75 kg."
+    "confidence": "confident",
+    "notes": "iKamper Skycamp 3.0 hard-shell roof top tent; 165 lb / 74.8 kg. Source: ikamper.com."
   },
   {
     "id": "rtt-softshell",
-    "name": "Soft-shell roof top tent",
+    "name": "ARB Series III Simpson roof top tent",
     "category": "camping",
-    "weightKg": 50,
+    "weightKg": 70,
     "mount": "roof",
-    "confidence": "estimated"
+    "confidence": "estimated",
+    "notes": "ARB Simpson III soft-shell tent; ~154 lb / 70 kg (70–81 kg depending on annex). Source: offroadtents.com."
   },
   {
     "id": "awning-270",
-    "name": "270° awning",
+    "name": "Rhino-Rack Batwing Compact 270° awning",
     "category": "camping",
-    "weightKg": 18,
+    "weightKg": 17.9,
     "mount": "roof",
-    "confidence": "estimated"
+    "confidence": "confident",
+    "notes": "Rhino-Rack 270° Batwing Compact; 39.5 lb / 17.9 kg. Source: rhinorack.com."
   },
   {
     "id": "fridge-freezer-50l",
-    "name": "Portable fridge/freezer (50 L)",
+    "name": "Dometic CFX3 55IM fridge/freezer (53 L)",
     "category": "camping",
-    "weightKg": 22,
+    "weightKg": 23.5,
     "mount": "interior",
     "confidence": "estimated",
-    "notes": "Empty appliance weight; contents add on top."
+    "notes": "Dometic CFX3 55IM 53 L 12V fridge/freezer; ~51.8 lb / 23.5 kg (empty). Source: dometic.com."
   },
   {
     "id": "camp-kitchen",
-    "name": "Slide-out camp kitchen",
+    "name": "Slide-out camp kitchen drawer unit",
     "category": "camping",
-    "weightKg": 15,
+    "weightKg": 25,
     "mount": "interior",
-    "confidence": "estimated"
+    "confidence": "estimated",
+    "notes": "Drawer-style slide-out camp kitchen (e.g. OVS camp kitchen w/ sink & worktop); ~55 lb / 25 kg estimate. Source: exitoffroad.com."
   },
   {
     "id": "bedding-kit",
     "name": "Bedding & sleeping kit",
     "category": "camping",
-    "weightKg": 10,
+    "weightKg": 4.5,
     "mount": "interior",
-    "confidence": "estimated"
+    "confidence": "estimated",
+    "notes": "Generic bedding/sleeping kit (bags, sheets, pillows); ~4.5 kg estimate."
   },
   {
     "id": "drawer-system",
-    "name": "Dual drawer system",
+    "name": "ARB Outback Solutions twin roller drawers",
     "category": "storage",
     "weightKg": 75,
     "mount": "interior",
-    "confidence": "estimated",
-    "notes": "Steel/ply dual drawers; alloy units lighter (~45 kg)."
+    "confidence": "confident",
+    "notes": "ARB Outback Solutions complete twin-drawer install ~75 kg (single RD945 ~29.5 kg each). Source: arb4x4 support."
   },
   {
     "id": "roof-platform",
-    "name": "Alloy roof platform/rack",
+    "name": "Front Runner Slimline II roof rack (Defender 110 full-size)",
     "category": "storage",
-    "weightKg": 35,
+    "weightKg": 42,
     "mount": "roof",
-    "confidence": "estimated"
+    "confidence": "confident",
+    "notes": "Front Runner Slimline II full-size kit (KRLD003L), installed 42 kg / 92 lb. Source: rhinoadventuregear.com."
   },
   {
     "id": "roof-box",
-    "name": "Roof cargo box",
+    "name": "Thule Motion XT XL cargo box",
     "category": "storage",
-    "weightKg": 18,
+    "weightKg": 20.9,
     "mount": "roof",
-    "confidence": "estimated"
+    "confidence": "confident",
+    "notes": "Thule Motion XT XL (6298); 46 lb / 20.9 kg. Source: thule.com."
   },
   {
     "id": "cargo-barrier",
-    "name": "Cargo barrier",
+    "name": "ARB steel cargo barrier",
     "category": "storage",
-    "weightKg": 12,
+    "weightKg": 18,
     "mount": "interior",
-    "confidence": "estimated"
+    "confidence": "estimated",
+    "notes": "ARB full-height steel cargo barrier; published weight not listed, typical ~16–20 kg. Source: arb.com.au."
   },
   {
     "id": "storage-boxes",
-    "name": "Storage boxes (set of 4)",
+    "name": "Front Runner Wolf Pack Pro boxes (x4)",
     "category": "storage",
-    "weightKg": 6,
+    "weightKg": 14.6,
     "mount": "interior",
-    "confidence": "estimated"
+    "confidence": "confident",
+    "notes": "Front Runner Wolf Pack Pro, 3.65 kg each x4 = 14.6 kg. Source: rhinoadventuregear.com."
   },
   {
     "id": "bull-bar",
-    "name": "Steel bull bar / winch bar",
+    "name": "ARB Summit bull bar (Hilux, w/ fitting kit)",
     "category": "protection",
-    "weightKg": 60,
+    "weightKg": 87,
     "mount": "front",
-    "confidence": "estimated",
-    "notes": "Steel; alloy bars ~30–40 kg."
+    "confidence": "confident",
+    "notes": "ARB Summit bull bar incl. chassis mounts & fitting kit ~87 kg gross (Toyota Hilux 2015–2022). Source: arb.com.au."
   },
   {
     "id": "rock-sliders",
-    "name": "Rock sliders (pair)",
+    "name": "ARB Summit rock sliders (pair)",
     "category": "protection",
     "weightKg": 30,
     "mount": "underbody",
-    "confidence": "estimated"
+    "confidence": "estimated",
+    "notes": "ARB 60.3 mm steel rock sliders, pair; published weight not listed, comparable steel sliders ~28–42 kg. Source: arb.com.au."
   },
   {
     "id": "skid-plates",
-    "name": "Underbody skid plate set",
+    "name": "ARB under-vehicle skid plate system (Hilux)",
     "category": "protection",
-    "weightKg": 25,
+    "weightKg": 30.4,
     "mount": "underbody",
-    "confidence": "estimated"
+    "confidence": "confident",
+    "notes": "ARB UVP 3 mm steel skid plate kit (5414200), 67 lb / 30.4 kg. Source: mudify.com."
   },
   {
     "id": "rear-bar-carrier",
-    "name": "Rear bar + wheel carrier",
+    "name": "ARB Summit MKII rear bar + dual wheel carriers",
     "category": "protection",
     "weightKg": 45,
     "mount": "rear",
-    "confidence": "estimated"
+    "confidence": "estimated",
+    "notes": "ARB Summit MKII rear bar (~30 kg) + dual wheel/jerry carriers (~15 kg) ~45 kg. Source: arb.com.au."
   },
   {
     "id": "snorkel",
-    "name": "Snorkel",
+    "name": "Safari Snorkel V-Spec (Hilux)",
     "category": "protection",
-    "weightKg": 3,
+    "weightKg": 3.5,
     "mount": "front",
-    "confidence": "estimated"
+    "confidence": "estimated",
+    "notes": "Safari V-Spec raised air intake (SS123HF); moulded LLDPE snorkels typically ~3–4 kg. Source: trekoverland.com."
   },
   {
     "id": "diff-guards",
-    "name": "Differential guards",
+    "name": "Steel differential guard",
     "category": "protection",
     "weightKg": 4,
     "mount": "underbody",
-    "confidence": "estimated"
+    "confidence": "estimated",
+    "notes": "3 mm steel diff guard; typical ~3–5 kg. Source: store.arbusa.com."
   },
   {
     "id": "spare-tyre-at",
-    "name": "Spare all-terrain tyre on alloy",
+    "name": "BFGoodrich KO2 LT265/70R17 AT on alloy",
     "category": "tyres",
-    "weightKg": 30,
+    "weightKg": 36.5,
     "mount": "rear",
-    "confidence": "estimated",
-    "notes": "~265/70R17 AT on alloy rim."
+    "confidence": "confident",
+    "notes": "KO2 LT265/70R17 ~54 lb / 24.5 kg + 17\" alloy ~12 kg = ~36.5 kg. Source: tiresize.com."
   },
   {
     "id": "second-spare-tyre",
-    "name": "Second spare tyre",
+    "name": "BFGoodrich KO2 LT265/70R17 AT on alloy (2nd spare)",
     "category": "tyres",
-    "weightKg": 30,
+    "weightKg": 36.5,
     "mount": "rear",
-    "confidence": "estimated"
+    "confidence": "confident",
+    "notes": "Second AT spare, same as primary: 24.5 kg tyre + ~12 kg alloy = ~36.5 kg. Source: tiresize.com."
   },
   {
     "id": "spare-tyre-mt",
-    "name": "Mud-terrain spare (oversized)",
+    "name": "BFGoodrich KM3 LT285/75R16 MT on wheel",
     "category": "tyres",
-    "weightKg": 38,
+    "weightKg": 43,
     "mount": "rear",
-    "confidence": "estimated"
+    "confidence": "confident",
+    "notes": "KM3 285/75R16 ~64.5 lb / 29.3 kg + 16\" wheel ~14 kg = ~43 kg. Source: tiresize.com."
   },
   {
     "id": "water-container-20l",
-    "name": "Water container 20 L (full)",
+    "name": "Scepter 20 L water can (full)",
     "category": "water",
-    "weightKg": 21,
+    "weightKg": 22,
     "mount": "interior",
     "confidence": "confident",
-    "notes": "20 L water (20 kg) + ~1 kg container."
+    "notes": "20 L water (20 kg) + Scepter water can tare 1.965 kg = ~22 kg. Source: jerrycan.ee."
   },
   {
     "id": "water-tank-40l",
-    "name": "Auxiliary water tank 40 L (full)",
+    "name": "Front Runner 42 L water tank (filled to 40 L)",
     "category": "water",
-    "weightKg": 42,
+    "weightKg": 45.8,
     "mount": "underbody",
     "confidence": "confident",
-    "notes": "40 kg water + ~2 kg tank."
+    "notes": "40 L water (40 kg) + Front Runner 42 L tank w/ mount tare 5.8 kg = ~45.8 kg. Source: nomadicsupply.com."
   },
   {
     "id": "water-jerry-10l",
     "name": "Water jerry can 10 L (full)",
     "category": "water",
-    "weightKg": 10.5,
+    "weightKg": 11.2,
     "mount": "rear",
-    "confidence": "confident"
+    "confidence": "confident",
+    "notes": "10 L water (10 kg) + plastic jerry tare ~1.2 kg = ~11.2 kg."
   },
   {
     "id": "fuel-jerry-20l",
-    "name": "Fuel jerry can 20 L (full diesel)",
+    "name": "Scepter 20 L diesel can (full)",
     "category": "fuel",
-    "weightKg": 18,
+    "weightKg": 19.4,
     "mount": "rear",
     "confidence": "confident",
-    "notes": "Diesel ~0.84 kg/L → ~16.8 kg + ~1.2 kg can."
+    "notes": "20 L diesel @0.84 kg/L = 16.8 kg + Scepter fuel can tare 2.59 kg = ~19.4 kg. Source: jerrycan.ee."
   },
   {
     "id": "fuel-jerry-10l",
-    "name": "Fuel jerry can 10 L (full diesel)",
+    "name": "Diesel jerry can 10 L (full)",
     "category": "fuel",
-    "weightKg": 9,
+    "weightKg": 9.9,
     "mount": "rear",
-    "confidence": "confident"
+    "confidence": "confident",
+    "notes": "10 L diesel @0.84 kg/L = 8.4 kg + metal jerry tare ~1.5 kg = ~9.9 kg."
   },
   {
     "id": "long-range-tank-80l",
-    "name": "Long-range fuel tank, extra 80 L (full)",
+    "name": "Long-range fuel tank, extra ~80 L (full diesel)",
     "category": "fuel",
-    "weightKg": 75,
+    "weightKg": 89.2,
     "mount": "underbody",
-    "confidence": "estimated",
-    "notes": "~67 kg diesel + tank; replaces or adds to factory tank."
+    "confidence": "confident",
+    "notes": "80 L extra diesel @0.84 kg/L = 67.2 kg + long-range tank tare ~22 kg = ~89.2 kg (e.g. Brown Davis). Source: browndavis.com.au."
   },
   {
     "id": "dual-battery",
-    "name": "Dual battery + box",
+    "name": "AGM 100Ah auxiliary battery + box",
     "category": "other",
-    "weightKg": 25,
+    "weightKg": 32,
     "mount": "interior",
-    "confidence": "estimated"
+    "confidence": "confident",
+    "notes": "100Ah AGM ~29 kg + battery box ~3 kg = ~32 kg. Source: renogy.com."
   },
   {
     "id": "solar-panel",
-    "name": "Folding solar panel (200 W)",
+    "name": "Redarc 200W folding solar panel",
     "category": "other",
-    "weightKg": 12,
+    "weightKg": 12.1,
     "mount": "interior",
-    "confidence": "estimated"
+    "confidence": "confident",
+    "notes": "Redarc 200W monocrystalline folding panel (SMSP1200); 26.7 lb / 12.1 kg. Source: redarc."
   },
   {
     "id": "tools-spares",
     "name": "Tools & spares kit",
     "category": "other",
-    "weightKg": 15,
+    "weightKg": 20,
     "mount": "interior",
-    "confidence": "estimated"
+    "confidence": "estimated",
+    "notes": "Recovery tools, sockets, fluids, belts, filters; ~15–25 kg estimate."
   },
   {
     "id": "fire-extinguisher",
-    "name": "Fire extinguisher + bracket",
+    "name": "2 kg ABE fire extinguisher + bracket",
     "category": "other",
-    "weightKg": 3,
+    "weightKg": 3.2,
     "mount": "interior",
-    "confidence": "confident"
+    "confidence": "confident",
+    "notes": "2.0 kg agent unit (~2.7 kg filled) + steel vehicle bracket ~0.5 kg = ~3.2 kg. Source: firefx.com.au."
   }
 ]
