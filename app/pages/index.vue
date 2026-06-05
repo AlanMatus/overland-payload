@@ -3,6 +3,7 @@ const { t } = useI18n()
 const { vehicles } = useVehicles()
 const { formatKg } = useWeightFormat()
 const build = useBuildStore()
+const { applySharedFromRoute } = useShareBuild()
 
 useSeoMeta({
   title: () => t('home.title'),
@@ -17,10 +18,11 @@ const vehicleItems = computed(() =>
   }))
 )
 
-// Phase 2: default to the first vehicle so the calculator is usable out of the box.
-// Phase 3 layers naming / persistence / sharing on top.
+// On load, a shared build (?b=) takes priority; otherwise the persisted build
+// (restored automatically by the store) stands. First-time visitors see the
+// empty state until they pick a vehicle.
 onMounted(() => {
-  if (!build.vehicleId && vehicles[0]) build.setVehicle(vehicles[0].id)
+  applySharedFromRoute()
 })
 </script>
 
@@ -30,6 +32,10 @@ onMounted(() => {
       <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">{{ t('home.title') }}</h1>
       <p class="mt-1 text-muted">{{ t('home.subtitle') }}</p>
     </div>
+
+    <UCard class="mb-6">
+      <BuildToolbar />
+    </UCard>
 
     <div class="grid grid-cols-1 gap-6 lg:grid-cols-5">
       <!-- Left: vehicle + controls + gear -->
@@ -60,6 +66,10 @@ onMounted(() => {
               <dd class="font-semibold tabular-nums">{{ formatKg(build.payloadCapacityKg) }}</dd>
             </div>
           </dl>
+          <p v-if="build.vehicle?.confidence === 'estimated'" class="mt-3 text-xs text-muted">
+            <UIcon name="i-lucide-info" class="inline size-3" />
+            {{ build.vehicle.notes || t('builder.estimatedNote') }}
+          </p>
         </UCard>
 
         <UCard>
@@ -71,9 +81,15 @@ onMounted(() => {
 
         <UCard>
           <template #header>
-            <h2 class="font-semibold">{{ t('builder.gear') }}</h2>
+            <div class="flex items-center justify-between gap-2">
+              <h2 class="font-semibold">{{ t('builder.gear') }}</h2>
+              <CustomGearForm />
+            </div>
           </template>
-          <GearCatalog />
+          <div class="space-y-6">
+            <CustomGearList />
+            <GearCatalog />
+          </div>
         </UCard>
       </div>
 
@@ -84,13 +100,22 @@ onMounted(() => {
             <template #header>
               <h2 class="font-semibold">{{ t('payload.title') }}</h2>
             </template>
+
             <PayloadBar
+              v-if="build.hasVehicle"
               :percent-used="build.percentUsed"
               :status="build.status"
               :total-laden-kg="build.totalLadenKg"
               :gvwr-kg="build.gvwrKg"
               :remaining-kg="build.remainingKg"
             />
+
+            <!-- Empty state -->
+            <div v-else class="py-6 text-center">
+              <UIcon name="i-lucide-truck" class="mx-auto size-8 text-muted" />
+              <p class="mt-2 font-medium">{{ t('payload.emptyTitle') }}</p>
+              <p class="text-sm text-muted">{{ t('payload.emptyHint') }}</p>
+            </div>
           </UCard>
 
           <UCard v-if="build.axleEstimate">

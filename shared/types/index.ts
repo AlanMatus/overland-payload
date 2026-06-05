@@ -57,3 +57,19 @@ export interface Build {
   fuelKg: number
   waterKg: number
 }
+
+/**
+ * The portable build configuration — the persisted/shareable shape.
+ * Same as Build minus the server-ish `id` (and vehicleId may be null while
+ * the user hasn't picked one yet). This is what gets encoded into a share URL.
+ */
+export interface BuildConfig {
+  name: string
+  vehicleId: string | null
+  gearItemIds: string[]
+  customGear: GearItem[]
+  passengers: number
+  avgPassengerWeightKg: number
+  fuelKg: number
+  waterKg: number
+}

@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import type { GearItem, Vehicle } from '#shared/types'
+import type { BuildConfig, GearItem, Vehicle } from '#shared/types'
 import {
   addedPayloadWeight,
   axleForMount,
@@ -160,6 +160,32 @@ export const useBuildStore = defineStore('build', () => {
     waterKg.value = 0
   }
 
+  /** Plain snapshot of the build config (no derived data) for sharing/persisting. */
+  function snapshot(): BuildConfig {
+    return {
+      name: name.value,
+      vehicleId: vehicleId.value,
+      gearItemIds: [...gearItemIds.value],
+      customGear: customGear.value.map((g) => ({ ...g })),
+      passengers: passengers.value,
+      avgPassengerWeightKg: avgPassengerWeightKg.value,
+      fuelKg: fuelKg.value,
+      waterKg: waterKg.value
+    }
+  }
+
+  /** Replace the whole build from a decoded share/config object. */
+  function applyConfig(config: BuildConfig) {
+    name.value = config.name ?? ''
+    vehicleId.value = config.vehicleId ?? null
+    gearItemIds.value = [...(config.gearItemIds ?? [])]
+    customGear.value = (config.customGear ?? []).map((g) => ({ ...g, isCustom: true }))
+    passengers.value = config.passengers ?? DEFAULT_PASSENGERS
+    avgPassengerWeightKg.value = config.avgPassengerWeightKg ?? DEFAULT_AVG_PASSENGER_KG
+    fuelKg.value = config.fuelKg ?? 0
+    waterKg.value = config.waterKg ?? 0
+  }
+
   return {
     // state
     name,
@@ -200,6 +226,23 @@ export const useBuildStore = defineStore('build', () => {
     setAvgPassengerWeight,
     setFuel,
     setWater,
-    reset
+    reset,
+    snapshot,
+    applyConfig
+  }
+}, {
+  // Persist the current build locally so it survives reloads (client-only).
+  persist: {
+    key: 'overland-build',
+    pick: [
+      'name',
+      'vehicleId',
+      'gearItemIds',
+      'customGear',
+      'passengers',
+      'avgPassengerWeightKg',
+      'fuelKg',
+      'waterKg'
+    ]
   }
 })

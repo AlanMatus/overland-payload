@@ -7,6 +7,9 @@
     "title": "Overland Rig Builder & Payload Calculator",
     "subtitle": "Pick a vehicle, add your gear, and see in real time whether your rig stays under its legal and safe weight limits."
   },
+  "common": {
+    "cancel": "Cancel"
+  },
   "builder": {
     "vehicle": "Vehicle",
     "chooseVehicle": "Choose a vehicle",
@@ -14,7 +17,33 @@
     "gvwr": "GVWR",
     "payloadCapacity": "Payload capacity",
     "crewAndLiquids": "Crew & liquids",
-    "gear": "Gear"
+    "gear": "Gear",
+    "estimatedNote": "Figures are estimated and vary by model year and market."
+  },
+  "toolbar": {
+    "buildName": "Build name",
+    "buildNamePlaceholder": "e.g. Sahara expedition rig",
+    "share": "Share",
+    "reset": "Reset",
+    "resetDone": "Build reset"
+  },
+  "share": {
+    "copied": "Share link copied to clipboard",
+    "ready": "Share link ready"
+  },
+  "custom": {
+    "add": "Custom item",
+    "addItem": "Add item",
+    "title": "Add a custom gear item",
+    "name": "Name",
+    "namePlaceholder": "e.g. Drone kit",
+    "weight": "Weight",
+    "weightHint": "kg",
+    "category": "Category",
+    "mount": "Mount",
+    "mountPlaceholder": "Unspecified",
+    "yourItems": "Your custom items",
+    "remove": "Remove item"
   },
   "controls": {
     "passengers": "Passengers",
@@ -54,6 +83,8 @@
     "overTitle": "Over the weight limit",
     "overBy": "You are {amount} over GVWR. Remove gear or reduce load.",
     "barLabel": "Percentage of GVWR used",
+    "emptyTitle": "No vehicle selected",
+    "emptyHint": "Pick a vehicle to see its payload limits.",
     "status": {
       "under": "Within limit",
       "near": "Near limit",
