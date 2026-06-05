@@ -159,5 +159,117 @@
     "gvwrKg": 1545,
     "confidence": "confident",
     "notes": "Jimny XL 5-door 1.5 petrol (launched Dec 2023), M/T. Kerb 1185 kg, GVM 1545 kg (Suzuki AU official; EU body equivalent). Axle limits not published. Source: suzuki.com.au specifications."
+  },
+  {
+    "id": "land-rover-discovery-4",
+    "make": "Land Rover",
+    "model": "Discovery 4",
+    "variant": "3.0 TDV6/SDV6 diesel auto",
+    "body": "5-door SUV",
+    "curbWeightKg": 2583,
+    "gvwrKg": 3240,
+    "confidence": "confident",
+    "notes": "LR4/Disco4 3.0 TDV6, EU/UK (~2009–2016). Kerb 2583 kg, GVM 3240 kg (varies ~2538–2670 kg by trim). Axle limits not sourced. Source: ultimatespecs.com / aulro.com."
+  },
+  {
+    "id": "land-rover-discovery-2",
+    "make": "Land Rover",
+    "model": "Discovery 2",
+    "variant": "2.5 Td5 (7-seat)",
+    "body": "5-door SUV",
+    "curbWeightKg": 2255,
+    "gvwrKg": 2880,
+    "confidence": "confident",
+    "notes": "Discovery Series II 2.5 Td5 ES, EU/UK (~1998–2004). Kerb 2255 kg; GVW 2880 kg (7-seat/self-levelling; coil-spring 5-seat 2750 kg). Axle limits not sourced. Source: parkers.co.uk / aulro.com."
+  },
+  {
+    "id": "land-rover-defender-classic",
+    "make": "Land Rover",
+    "model": "Defender (Classic)",
+    "variant": "110 Td5 / 300Tdi Station Wagon",
+    "body": "110 Td5",
+    "curbWeightKg": 2055,
+    "gvwrKg": 2950,
+    "frontAxleMaxKg": 1200,
+    "rearAxleMaxKg": 1750,
+    "confidence": "confident",
+    "notes": "Classic Defender 110 Station Wagon (Td5/300Tdi), EU/EEC (pre-2016). EEC kerb ~2055 kg (incl. fuel + 75 kg); GVW 2950 kg, front 1200 / rear 1750 (Utility variants 3050/1850). Source: Land Rover workshop manual EEC kerb-weight tables."
+  },
+  {
+    "id": "toyota-land-cruiser-80",
+    "make": "Toyota",
+    "model": "Land Cruiser 80",
+    "variant": "4.2 TD HDJ80 (1HD)",
+    "body": "5-door wagon",
+    "curbWeightKg": 2296,
+    "gvwrKg": 2960,
+    "confidence": "confident",
+    "notes": "80 Series 4.2 turbo-diesel HDJ80 (1HD), EU/intl (~1990–1997). Kerb 2296 kg, max permissible 2960 kg (kerb varies ~2200–2425 kg; later-spec GVM up to ~3060 kg). Axle limits not sourced. Source: auto-data.net."
+  },
+  {
+    "id": "toyota-land-cruiser-prado-150",
+    "make": "Toyota",
+    "model": "Land Cruiser Prado",
+    "variant": "150 2.8 D-4D (1GD-FTV)",
+    "body": "5-door wagon",
+    "curbWeightKg": 2165,
+    "gvwrKg": 2990,
+    "confidence": "estimated",
+    "notes": "Prado J150 facelift 2.8 D-4D, EU. Kerb 2165 kg (base 5-seat), GVW 2990 kg; heavier 7-seat trims ~2560 kg kerb / 3150 kg GVW — varies by market/trim. Axle limits not sourced. Source: auto-data.net."
+  },
+  {
+    "id": "mitsubishi-pajero",
+    "make": "Mitsubishi",
+    "model": "Pajero",
+    "variant": "IV / Shogun 3.2 DI-D",
+    "body": "5-door LWB",
+    "curbWeightKg": 2405,
+    "gvwrKg": 3030,
+    "confidence": "confident",
+    "notes": "Pajero IV 3.2 DI-D 5-door, EU. Kerb 2405 kg, GVW 3030 kg (earlier IV ~2265 kg kerb — varies by trim/year). Axle splits not published. Source: encycarpedia.com / auto-data.net."
+  },
+  {
+    "id": "mercedes-g-class",
+    "make": "Mercedes-Benz",
+    "model": "G-Class",
+    "variant": "G 350 d 4MATIC (W463, 2018+)",
+    "body": "5-door W463",
+    "curbWeightKg": 2376,
+    "gvwrKg": 3150,
+    "confidence": "confident",
+    "notes": "G 350 d W463 (facelift 2018, 286 hp), EU. Kerb 2376 kg, permissible gross 3150 kg, max load 774 kg. Per-axle limits not listed. Source: auto-data.net EU homologation."
+  },
+  {
+    "id": "jeep-cherokee-xj",
+    "make": "Jeep",
+    "model": "Cherokee XJ",
+    "variant": "4.0 4WD",
+    "body": "5-door SUV",
+    "curbWeightKg": 1635,
+    "gvwrKg": 2223,
+    "confidence": "estimated",
+    "notes": "Classic XJ 4.0 (1984–2001), US figures converted (0.4536). Curb ~3605 lb = 1635 kg, GVWR ~4900 lb = 2223 kg (curb varies 3100–3600 lb by config). Axle GAWR not reliably published. Source: encycarpedia.com / door-plate reports."
+  },
+  {
+    "id": "lada-niva",
+    "make": "Lada",
+    "model": "Niva",
+    "variant": "Legend 1.7i 4x4",
+    "body": "3-door",
+    "curbWeightKg": 1210,
+    "gvwrKg": 1610,
+    "confidence": "confident",
+    "notes": "Niva / Niva Legend 1.7i 3-door, EU/RU. Kerb 1210 kg, gross 1610 kg, payload 400 kg. Axle splits not published. Source: auto-data.net / encycarpedia.com."
+  },
+  {
+    "id": "toyota-tacoma",
+    "make": "Toyota",
+    "model": "Tacoma",
+    "variant": "3rd gen TRD Off-Road V6 (US)",
+    "body": "Double Cab",
+    "curbWeightKg": 2007,
+    "gvwrKg": 2540,
+    "confidence": "estimated",
+    "notes": "3rd-gen Tacoma TRD Off-Road Double Cab 4x4 (2018), US market (NOT EU-sold), converted (0.4536). Curb ~4425 lb = 2007 kg, GVWR ~5600 lb = 2540 kg. Axle splits not published. Source: jdpower.com / kbb.com."
   }
 ]
