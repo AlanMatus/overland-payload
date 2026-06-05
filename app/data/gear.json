@@ -1,0 +1,301 @@
+[
+  {
+    "id": "winch-electric",
+    "name": "Electric winch (~9.5k lb)",
+    "category": "recovery",
+    "weightKg": 30,
+    "mount": "front",
+    "confidence": "estimated",
+    "notes": "Includes mounting plate; varies 25–35 kg by model."
+  },
+  {
+    "id": "recovery-kit",
+    "name": "Recovery kit (straps, shackles, gloves)",
+    "category": "recovery",
+    "weightKg": 8,
+    "mount": "interior",
+    "confidence": "estimated"
+  },
+  {
+    "id": "traction-boards",
+    "name": "Traction boards (pair)",
+    "category": "recovery",
+    "weightKg": 4,
+    "mount": "rear",
+    "confidence": "confident",
+    "notes": "MaxTrax-class recovery boards ~4 kg/pair."
+  },
+  {
+    "id": "hi-lift-jack",
+    "name": "Hi-lift jack (48\")",
+    "category": "recovery",
+    "weightKg": 13,
+    "mount": "rear",
+    "confidence": "confident"
+  },
+  {
+    "id": "air-compressor",
+    "name": "Portable air compressor",
+    "category": "recovery",
+    "weightKg": 9,
+    "mount": "interior",
+    "confidence": "estimated"
+  },
+  {
+    "id": "snatch-block-kit",
+    "name": "Snatch block & soft shackle kit",
+    "category": "recovery",
+    "weightKg": 2,
+    "mount": "interior",
+    "confidence": "estimated"
+  },
+  {
+    "id": "rtt-hardshell",
+    "name": "Hard-shell roof top tent",
+    "category": "camping",
+    "weightKg": 65,
+    "mount": "roof",
+    "confidence": "estimated",
+    "notes": "Aluminium hard-shell; range 55–75 kg."
+  },
+  {
+    "id": "rtt-softshell",
+    "name": "Soft-shell roof top tent",
+    "category": "camping",
+    "weightKg": 50,
+    "mount": "roof",
+    "confidence": "estimated"
+  },
+  {
+    "id": "awning-270",
+    "name": "270° awning",
+    "category": "camping",
+    "weightKg": 18,
+    "mount": "roof",
+    "confidence": "estimated"
+  },
+  {
+    "id": "fridge-freezer-50l",
+    "name": "Portable fridge/freezer (50 L)",
+    "category": "camping",
+    "weightKg": 22,
+    "mount": "interior",
+    "confidence": "estimated",
+    "notes": "Empty appliance weight; contents add on top."
+  },
+  {
+    "id": "camp-kitchen",
+    "name": "Slide-out camp kitchen",
+    "category": "camping",
+    "weightKg": 15,
+    "mount": "interior",
+    "confidence": "estimated"
+  },
+  {
+    "id": "bedding-kit",
+    "name": "Bedding & sleeping kit",
+    "category": "camping",
+    "weightKg": 10,
+    "mount": "interior",
+    "confidence": "estimated"
+  },
+  {
+    "id": "drawer-system",
+    "name": "Dual drawer system",
+    "category": "storage",
+    "weightKg": 75,
+    "mount": "interior",
+    "confidence": "estimated",
+    "notes": "Steel/ply dual drawers; alloy units lighter (~45 kg)."
+  },
+  {
+    "id": "roof-platform",
+    "name": "Alloy roof platform/rack",
+    "category": "storage",
+    "weightKg": 35,
+    "mount": "roof",
+    "confidence": "estimated"
+  },
+  {
+    "id": "roof-box",
+    "name": "Roof cargo box",
+    "category": "storage",
+    "weightKg": 18,
+    "mount": "roof",
+    "confidence": "estimated"
+  },
+  {
+    "id": "cargo-barrier",
+    "name": "Cargo barrier",
+    "category": "storage",
+    "weightKg": 12,
+    "mount": "interior",
+    "confidence": "estimated"
+  },
+  {
+    "id": "storage-boxes",
+    "name": "Storage boxes (set of 4)",
+    "category": "storage",
+    "weightKg": 6,
+    "mount": "interior",
+    "confidence": "estimated"
+  },
+  {
+    "id": "bull-bar",
+    "name": "Steel bull bar / winch bar",
+    "category": "protection",
+    "weightKg": 60,
+    "mount": "front",
+    "confidence": "estimated",
+    "notes": "Steel; alloy bars ~30–40 kg."
+  },
+  {
+    "id": "rock-sliders",
+    "name": "Rock sliders (pair)",
+    "category": "protection",
+    "weightKg": 30,
+    "mount": "underbody",
+    "confidence": "estimated"
+  },
+  {
+    "id": "skid-plates",
+    "name": "Underbody skid plate set",
+    "category": "protection",
+    "weightKg": 25,
+    "mount": "underbody",
+    "confidence": "estimated"
+  },
+  {
+    "id": "rear-bar-carrier",
+    "name": "Rear bar + wheel carrier",
+    "category": "protection",
+    "weightKg": 45,
+    "mount": "rear",
+    "confidence": "estimated"
+  },
+  {
+    "id": "snorkel",
+    "name": "Snorkel",
+    "category": "protection",
+    "weightKg": 3,
+    "mount": "front",
+    "confidence": "estimated"
+  },
+  {
+    "id": "diff-guards",
+    "name": "Differential guards",
+    "category": "protection",
+    "weightKg": 4,
+    "mount": "underbody",
+    "confidence": "estimated"
+  },
+  {
+    "id": "spare-tyre-at",
+    "name": "Spare all-terrain tyre on alloy",
+    "category": "tyres",
+    "weightKg": 30,
+    "mount": "rear",
+    "confidence": "estimated",
+    "notes": "~265/70R17 AT on alloy rim."
+  },
+  {
+    "id": "second-spare-tyre",
+    "name": "Second spare tyre",
+    "category": "tyres",
+    "weightKg": 30,
+    "mount": "rear",
+    "confidence": "estimated"
+  },
+  {
+    "id": "spare-tyre-mt",
+    "name": "Mud-terrain spare (oversized)",
+    "category": "tyres",
+    "weightKg": 38,
+    "mount": "rear",
+    "confidence": "estimated"
+  },
+  {
+    "id": "water-container-20l",
+    "name": "Water container 20 L (full)",
+    "category": "water",
+    "weightKg": 21,
+    "mount": "interior",
+    "confidence": "confident",
+    "notes": "20 L water (20 kg) + ~1 kg container."
+  },
+  {
+    "id": "water-tank-40l",
+    "name": "Auxiliary water tank 40 L (full)",
+    "category": "water",
+    "weightKg": 42,
+    "mount": "underbody",
+    "confidence": "confident",
+    "notes": "40 kg water + ~2 kg tank."
+  },
+  {
+    "id": "water-jerry-10l",
+    "name": "Water jerry can 10 L (full)",
+    "category": "water",
+    "weightKg": 10.5,
+    "mount": "rear",
+    "confidence": "confident"
+  },
+  {
+    "id": "fuel-jerry-20l",
+    "name": "Fuel jerry can 20 L (full diesel)",
+    "category": "fuel",
+    "weightKg": 18,
+    "mount": "rear",
+    "confidence": "confident",
+    "notes": "Diesel ~0.84 kg/L → ~16.8 kg + ~1.2 kg can."
+  },
+  {
+    "id": "fuel-jerry-10l",
+    "name": "Fuel jerry can 10 L (full diesel)",
+    "category": "fuel",
+    "weightKg": 9,
+    "mount": "rear",
+    "confidence": "confident"
+  },
+  {
+    "id": "long-range-tank-80l",
+    "name": "Long-range fuel tank, extra 80 L (full)",
+    "category": "fuel",
+    "weightKg": 75,
+    "mount": "underbody",
+    "confidence": "estimated",
+    "notes": "~67 kg diesel + tank; replaces or adds to factory tank."
+  },
+  {
+    "id": "dual-battery",
+    "name": "Dual battery + box",
+    "category": "other",
+    "weightKg": 25,
+    "mount": "interior",
+    "confidence": "estimated"
+  },
+  {
+    "id": "solar-panel",
+    "name": "Folding solar panel (200 W)",
+    "category": "other",
+    "weightKg": 12,
+    "mount": "interior",
+    "confidence": "estimated"
+  },
+  {
+    "id": "tools-spares",
+    "name": "Tools & spares kit",
+    "category": "other",
+    "weightKg": 15,
+    "mount": "interior",
+    "confidence": "estimated"
+  },
+  {
+    "id": "fire-extinguisher",
+    "name": "Fire extinguisher + bracket",
+    "category": "other",
+    "weightKg": 3,
+    "mount": "interior",
+    "confidence": "confident"
+  }
+]

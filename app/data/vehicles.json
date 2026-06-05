@@ -1,0 +1,126 @@
+[
+  {
+    "id": "toyota-land-cruiser-300",
+    "make": "Toyota",
+    "model": "Land Cruiser",
+    "variant": "300 Series",
+    "curbWeightKg": 2630,
+    "gvwrKg": 3280,
+    "frontAxleMaxKg": 1600,
+    "rearAxleMaxKg": 2000,
+    "confidence": "estimated",
+    "notes": "Figures vary by trim/market; based on typical 300-series diesel specs."
+  },
+  {
+    "id": "toyota-land-cruiser-70",
+    "make": "Toyota",
+    "model": "Land Cruiser",
+    "variant": "70 Series",
+    "curbWeightKg": 2200,
+    "gvwrKg": 3060,
+    "frontAxleMaxKg": 1480,
+    "rearAxleMaxKg": 1900,
+    "confidence": "estimated",
+    "notes": "Wagon/troop-carrier vary widely; estimated mid-spec."
+  },
+  {
+    "id": "land-rover-defender-110",
+    "make": "Land Rover",
+    "model": "Defender 110",
+    "variant": "L663 (2020+)",
+    "curbWeightKg": 2300,
+    "gvwrKg": 3220,
+    "frontAxleMaxKg": 1620,
+    "rearAxleMaxKg": 1900,
+    "confidence": "estimated",
+    "notes": "New-gen Defender; engine choice shifts curb weight notably."
+  },
+  {
+    "id": "toyota-hilux-dc",
+    "make": "Toyota",
+    "model": "Hilux",
+    "variant": "Double Cab",
+    "curbWeightKg": 2095,
+    "gvwrKg": 3050,
+    "frontAxleMaxKg": 1480,
+    "rearAxleMaxKg": 1850,
+    "confidence": "estimated",
+    "notes": "Typical 2.8 diesel double-cab; payload often ~1000 kg headline."
+  },
+  {
+    "id": "nissan-patrol-y61",
+    "make": "Nissan",
+    "model": "Patrol",
+    "variant": "Y61 / GU",
+    "curbWeightKg": 2520,
+    "gvwrKg": 3300,
+    "confidence": "estimated",
+    "notes": "Long-running platform; axle limits omitted (insufficiently confident)."
+  },
+  {
+    "id": "ford-ranger-wildtrak",
+    "make": "Ford",
+    "model": "Ranger",
+    "variant": "Wildtrak (T6.2)",
+    "curbWeightKg": 2250,
+    "gvwrKg": 3230,
+    "frontAxleMaxKg": 1480,
+    "rearAxleMaxKg": 1950,
+    "confidence": "estimated",
+    "notes": "Next-gen Ranger; figures approximate for 2.0 bi-turbo."
+  },
+  {
+    "id": "jeep-wrangler-rubicon",
+    "make": "Jeep",
+    "model": "Wrangler",
+    "variant": "JL Rubicon Unlimited",
+    "curbWeightKg": 2060,
+    "gvwrKg": 2812,
+    "confidence": "estimated",
+    "notes": "4-door JL; low payload headroom is a known constraint."
+  },
+  {
+    "id": "vw-transporter-t6",
+    "make": "Volkswagen",
+    "model": "Transporter",
+    "variant": "T6.1 (van)",
+    "curbWeightKg": 2000,
+    "gvwrKg": 3080,
+    "frontAxleMaxKg": 1610,
+    "rearAxleMaxKg": 1720,
+    "confidence": "estimated",
+    "notes": "Transporter-class van; many GVWR options (2.8t–3.2t) exist."
+  },
+  {
+    "id": "mercedes-sprinter-4x4",
+    "make": "Mercedes-Benz",
+    "model": "Sprinter",
+    "variant": "319 4x4 (van)",
+    "curbWeightKg": 2500,
+    "gvwrKg": 3500,
+    "frontAxleMaxKg": 1700,
+    "rearAxleMaxKg": 2100,
+    "confidence": "estimated",
+    "notes": "Common camper-conversion base; heavier-GVWR variants exist."
+  },
+  {
+    "id": "toyota-4runner",
+    "make": "Toyota",
+    "model": "4Runner",
+    "variant": "5th gen",
+    "curbWeightKg": 2155,
+    "gvwrKg": 2812,
+    "confidence": "estimated",
+    "notes": "North-American market; axle limits omitted."
+  },
+  {
+    "id": "suzuki-jimny",
+    "make": "Suzuki",
+    "model": "Jimny",
+    "variant": "GJ (2018+)",
+    "curbWeightKg": 1135,
+    "gvwrKg": 1435,
+    "confidence": "estimated",
+    "notes": "Very small payload (~300 kg); easy to overload — good edge case."
+  }
+]
