@@ -36,6 +36,22 @@ describe('vehicle seed data', () => {
       expect(['confident', 'estimated'], v.id).toContain(v.confidence)
     }
   })
+
+  it('multi-body models share make+model and have distinct bodies', () => {
+    const byModel = new Map<string, Vehicle[]>()
+    for (const v of vehicleList) {
+      const key = `${v.make} ${v.model}`
+      byModel.set(key, [...(byModel.get(key) ?? []), v])
+    }
+    // Defender, Wrangler and Jimny each ship more than one body.
+    for (const model of ['Land Rover Defender', 'Jeep Wrangler', 'Suzuki Jimny']) {
+      const variants = byModel.get(model) ?? []
+      expect(variants.length, model).toBeGreaterThan(1)
+      const bodies = variants.map((v) => v.body)
+      expect(bodies.every(Boolean), `${model} bodies`).toBe(true)
+      expect(new Set(bodies).size, `${model} distinct bodies`).toBe(variants.length)
+    }
+  })
 })
 
 describe('gear seed data', () => {

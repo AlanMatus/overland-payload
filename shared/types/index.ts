@@ -22,6 +22,12 @@ export interface Vehicle {
   make: string
   model: string
   variant?: string
+  /**
+   * Short body label (e.g. "3-door", "110 · 5-door", "Double Cab"). Vehicles
+   * sharing the same `make` + `model` are body variants of one another and are
+   * grouped behind a single model choice in the picker.
+   */
+  body?: string
   curbWeightKg: number // kerb / unladen weight
   gvwrKg: number // gross vehicle weight rating (max total allowed)
   frontAxleMaxKg?: number

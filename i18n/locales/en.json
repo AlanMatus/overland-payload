@@ -14,6 +14,8 @@
   },
   "builder": {
     "vehicle": "Vehicle",
+    "model": "Model",
+    "body": "Body",
     "chooseVehicle": "Choose a vehicle",
     "curb": "Curb weight",
     "gvwr": "GVWR",

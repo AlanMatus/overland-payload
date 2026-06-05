@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const { vehicles } = useVehicles()
+const { groups, getGroup } = useVehicles()
 const { formatKg } = useWeightFormat()
 const build = useBuildStore()
 const { applySharedFromRoute } = useShareBuild()
@@ -10,13 +10,29 @@ useSeoMeta({
   description: () => t('home.subtitle')
 })
 
-// Vehicle options for the picker.
-const vehicleItems = computed(() =>
-  vehicles.map((v) => ({
-    label: [v.make, v.model, v.variant].filter(Boolean).join(' '),
+// Step 1: model (one option per make+model group).
+const modelItems = computed(() => groups.map((g) => ({ label: g.label, value: g.key })))
+
+const selectedGroupKey = computed(() =>
+  build.vehicle ? vehicleGroupKey(build.vehicle) : undefined
+)
+const selectedGroup = computed(() => getGroup(selectedGroupKey.value))
+
+// Step 2: body — only shown when the chosen model has more than one body.
+const bodyItems = computed(() =>
+  (selectedGroup.value?.vehicles ?? []).map((v) => ({
+    label: v.body ?? v.variant ?? v.id,
     value: v.id
   }))
 )
+const hasBodyChoice = computed(() => (selectedGroup.value?.vehicles.length ?? 0) > 1)
+
+// Pick a model → default to its first body. Switching model keeps everything
+// else (gear, crew, fuel) so users can compare platforms at the same load.
+function onSelectModel(key: string) {
+  const first = getGroup(key)?.vehicles[0]
+  if (first) build.setVehicle(first.id)
+}
 
 // On load, a shared build (?b=) takes priority; otherwise the persisted build
 // (restored automatically by the store) stands. First-time visitors see the
@@ -44,14 +60,27 @@ onMounted(() => {
           <template #header>
             <h2 class="font-semibold">{{ t('builder.vehicle') }}</h2>
           </template>
-          <USelectMenu
-            :model-value="build.vehicleId ?? undefined"
-            :items="vehicleItems"
-            value-key="value"
-            :placeholder="t('builder.chooseVehicle')"
-            class="w-full"
-            @update:model-value="build.setVehicle($event)"
-          />
+          <div class="grid grid-cols-1 gap-3" :class="{ 'sm:grid-cols-2': hasBodyChoice }">
+            <UFormField :label="t('builder.model')">
+              <USelectMenu
+                :model-value="selectedGroupKey"
+                :items="modelItems"
+                value-key="value"
+                :placeholder="t('builder.chooseVehicle')"
+                class="w-full"
+                @update:model-value="onSelectModel($event)"
+              />
+            </UFormField>
+            <UFormField v-if="hasBodyChoice" :label="t('builder.body')">
+              <USelect
+                :model-value="build.vehicleId ?? undefined"
+                :items="bodyItems"
+                value-key="value"
+                class="w-full"
+                @update:model-value="build.setVehicle($event)"
+              />
+            </UFormField>
+          </div>
           <dl v-if="build.vehicle" class="mt-4 grid grid-cols-3 gap-3 text-center">
             <div class="rounded-lg bg-elevated p-3">
               <dt class="text-xs text-muted">{{ t('builder.curb') }}</dt>
