@@ -18,8 +18,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       appName: 'Overland Rig Builder',
-      // Keep the locale switcher hidden until the Slovak translation is ready.
-      localeSwitcherEnabled: false
+      // Slovak translation is ready — show the locale switcher.
+      localeSwitcherEnabled: true
     }
   },
 

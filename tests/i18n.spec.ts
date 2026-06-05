@@ -1,8 +1,18 @@
+import { readFileSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
-import en from '../i18n/locales/en.json'
-import sk from '../i18n/locales/sk.json'
 
 type Json = { [key: string]: string | Json }
+
+// Read raw JSON (not `import`) so the @nuxtjs/i18n Vite plugin doesn't compile
+// the locale files into message ASTs before we inspect their keys.
+const load = (name: string): Json =>
+  JSON.parse(
+    readFileSync(fileURLToPath(new URL(`../i18n/locales/${name}.json`, import.meta.url)), 'utf8')
+  )
+
+const en = load('en')
+const sk = load('sk')
 
 function flattenKeys(obj: Json, prefix = ''): string[] {
   return Object.entries(obj).flatMap(([key, value]) => {

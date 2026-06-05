@@ -1,105 +1,105 @@
 {
   "app": {
     "name": "Overland Rig Builder",
-    "tagline": "Plan your build. Stay within your weight limits."
+    "tagline": "Naplánujte si zostavu. Zostaňte v rámci hmotnostných limitov."
   },
   "home": {
-    "metaTitle": "Payload Calculator",
-    "title": "Overland Rig Builder & Payload Calculator",
-    "subtitle": "Pick a vehicle, add your gear, and see in real time whether your rig stays under its legal and safe weight limits."
+    "metaTitle": "Kalkulačka nosnosti",
+    "title": "Overland Rig Builder a kalkulačka nosnosti",
+    "subtitle": "Vyberte si vozidlo, pridajte výbavu a v reálnom čase sledujte, či vaša zostava zostáva pod zákonnými a bezpečnými hmotnostnými limitmi."
   },
   "common": {
-    "cancel": "Cancel",
-    "language": "Language"
+    "cancel": "Zrušiť",
+    "language": "Jazyk"
   },
   "builder": {
-    "vehicle": "Vehicle",
-    "chooseVehicle": "Choose a vehicle",
-    "curb": "Curb weight",
-    "gvwr": "GVWR",
-    "payloadCapacity": "Payload capacity",
-    "crewAndLiquids": "Crew & liquids",
-    "gear": "Gear",
-    "estimatedNote": "Figures are estimated and vary by model year and market."
+    "vehicle": "Vozidlo",
+    "chooseVehicle": "Vyberte vozidlo",
+    "curb": "Pohotovostná hmotnosť",
+    "gvwr": "Max. hmotnosť (GVWR)",
+    "payloadCapacity": "Nosnosť",
+    "crewAndLiquids": "Posádka a kvapaliny",
+    "gear": "Výbava",
+    "estimatedNote": "Hodnoty sú odhadované a líšia sa podľa modelového roka a trhu."
   },
   "toolbar": {
-    "buildName": "Build name",
-    "buildNamePlaceholder": "e.g. Sahara expedition rig",
-    "share": "Share",
-    "reset": "Reset",
-    "resetDone": "Build reset"
+    "buildName": "Názov zostavy",
+    "buildNamePlaceholder": "napr. Saharská expedičná zostava",
+    "share": "Zdieľať",
+    "reset": "Resetovať",
+    "resetDone": "Zostava bola resetovaná"
   },
   "share": {
-    "copied": "Share link copied to clipboard",
-    "ready": "Share link ready"
+    "copied": "Odkaz na zdieľanie bol skopírovaný do schránky",
+    "ready": "Odkaz na zdieľanie je pripravený"
   },
   "custom": {
-    "add": "Custom item",
-    "addItem": "Add item",
-    "title": "Add a custom gear item",
-    "name": "Name",
-    "namePlaceholder": "e.g. Drone kit",
-    "weight": "Weight",
+    "add": "Vlastná položka",
+    "addItem": "Pridať položku",
+    "title": "Pridať vlastnú položku výbavy",
+    "name": "Názov",
+    "namePlaceholder": "napr. Sada pre dron",
+    "weight": "Hmotnosť",
     "weightHint": "kg",
-    "category": "Category",
-    "mount": "Mount",
-    "mountPlaceholder": "Unspecified",
-    "yourItems": "Your custom items",
-    "remove": "Remove item"
+    "category": "Kategória",
+    "mount": "Umiestnenie",
+    "mountPlaceholder": "Neurčené",
+    "yourItems": "Vaše vlastné položky",
+    "remove": "Odstrániť položku"
   },
   "controls": {
-    "passengers": "Passengers",
-    "avgPassengerWeight": "Avg. passenger weight",
-    "fuel": "Fuel",
-    "fuelHint": "kg of fuel on board",
-    "water": "Water",
-    "waterHint": "kg of water on board"
+    "passengers": "Cestujúci",
+    "avgPassengerWeight": "Priem. hmotnosť cestujúceho",
+    "fuel": "Palivo",
+    "fuelHint": "kg paliva na palube",
+    "water": "Voda",
+    "waterHint": "kg vody na palube"
   },
   "gear": {
-    "add": "Add",
-    "added": "Added",
-    "estimated": "Est.",
+    "add": "Pridať",
+    "added": "Pridané",
+    "estimated": "Odhad",
     "category": {
-      "recovery": "Recovery",
-      "camping": "Camping",
-      "storage": "Storage",
-      "protection": "Protection",
-      "tyres": "Tyres",
-      "water": "Water",
-      "fuel": "Fuel",
-      "other": "Other"
+      "recovery": "Vyslobodzovanie",
+      "camping": "Kempovanie",
+      "storage": "Úložný priestor",
+      "protection": "Ochrana",
+      "tyres": "Pneumatiky",
+      "water": "Voda",
+      "fuel": "Palivo",
+      "other": "Ostatné"
     },
     "mount": {
-      "roof": "Roof",
-      "front": "Front",
-      "rear": "Rear",
-      "interior": "Interior",
-      "underbody": "Underbody"
+      "roof": "Strecha",
+      "front": "Predok",
+      "rear": "Zadok",
+      "interior": "Interiér",
+      "underbody": "Podvozok"
     }
   },
   "payload": {
-    "title": "Payload",
-    "totalLaden": "Total laden weight",
-    "ofGvwr": "of {gvwr} GVWR",
-    "remaining": "{amount} of payload remaining",
-    "overTitle": "Over the weight limit",
-    "overBy": "You are {amount} over GVWR. Remove gear or reduce load.",
-    "barLabel": "Percentage of GVWR used",
-    "emptyTitle": "No vehicle selected",
-    "emptyHint": "Pick a vehicle to see its payload limits.",
+    "title": "Nosnosť",
+    "totalLaden": "Celková hmotnosť s nákladom",
+    "ofGvwr": "z {gvwr} GVWR",
+    "remaining": "Zostáva {amount} nosnosti",
+    "overTitle": "Prekročený hmotnostný limit",
+    "overBy": "Prekročili ste GVWR o {amount}. Odoberte výbavu alebo znížte náklad.",
+    "barLabel": "Percento využitia GVWR",
+    "emptyTitle": "Nie je vybrané vozidlo",
+    "emptyHint": "Vyberte vozidlo a zobrazia sa jeho hmotnostné limity.",
     "status": {
-      "under": "Within limit",
-      "near": "Near limit",
-      "over": "Overloaded"
+      "under": "V rámci limitu",
+      "near": "Blízko limitu",
+      "over": "Preťažené"
     }
   },
   "axle": {
-    "title": "Axle load",
-    "estimate": "Estimate",
-    "front": "Front axle",
-    "rear": "Rear axle",
-    "max": "max {amount}",
-    "over": "Over axle limit",
-    "disclaimer": "Rough estimate from a fixed weight split — not a substitute for a weighbridge."
+    "title": "Zaťaženie nápravy",
+    "estimate": "Odhad",
+    "front": "Predná náprava",
+    "rear": "Zadná náprava",
+    "max": "max. {amount}",
+    "over": "Prekročený limit nápravy",
+    "disclaimer": "Hrubý odhad na základe pevného rozloženia hmotnosti — nenahrádza váženie na váhe."
   }
 }
