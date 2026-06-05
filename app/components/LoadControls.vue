@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const build = useBuildStore()
+
+const numUi = { base: 'font-mono tabular-nums' }
 </script>
 
 <template>
@@ -10,6 +12,8 @@ const build = useBuildStore()
         :model-value="build.passengers"
         :min="0"
         :step="1"
+        :ui="numUi"
+        icon="i-lucide-users"
         class="w-full"
         @update:model-value="build.setPassengers($event)"
       />
@@ -20,6 +24,8 @@ const build = useBuildStore()
         :model-value="build.avgPassengerWeightKg"
         :min="0"
         :step="5"
+        :ui="numUi"
+        icon="i-lucide-weight"
         class="w-full"
         @update:model-value="build.setAvgPassengerWeight($event)"
       />
@@ -30,6 +36,8 @@ const build = useBuildStore()
         :model-value="build.fuelKg"
         :min="0"
         :step="5"
+        :ui="numUi"
+        icon="i-lucide-fuel"
         class="w-full"
         @update:model-value="build.setFuel($event)"
       />
@@ -40,6 +48,8 @@ const build = useBuildStore()
         :model-value="build.waterKg"
         :min="0"
         :step="5"
+        :ui="numUi"
+        icon="i-lucide-droplets"
         class="w-full"
         @update:model-value="build.setWater($event)"
       />

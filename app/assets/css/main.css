@@ -1,2 +1,131 @@
 @import 'tailwindcss';
 @import '@nuxt/ui';
+
+/* ============================================================================
+   Expedition Dashboard — design tokens
+   Warm "adventurecore" palette (terra + sand), OKLCH-derived, light/dark.
+   ========================================================================= */
+@theme static {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fraunces', ui-serif, Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  --radius-lg: 0.875rem;
+
+  /* terra — burnt-orange brand accent */
+  --color-terra-50: #fcf2ea;
+  --color-terra-100: #f8e0cc;
+  --color-terra-200: #efc09a;
+  --color-terra-300: #e59e66;
+  --color-terra-400: #dd7f3c;
+  --color-terra-500: #c85a1f;
+  --color-terra-600: #aa481a;
+  --color-terra-700: #883a18;
+  --color-terra-800: #6e3016;
+  --color-terra-900: #5a2912;
+  --color-terra-950: #321408;
+
+  /* sand — warm neutral (drives surfaces, text, borders both modes) */
+  --color-sand-50: #f7f4ef;
+  --color-sand-100: #f0eae0;
+  --color-sand-200: #e4dccf;
+  --color-sand-300: #d3c8b6;
+  --color-sand-400: #b4a896;
+  --color-sand-500: #75695d;
+  --color-sand-600: #5c5349;
+  --color-sand-700: #443d36;
+  --color-sand-800: #241f1a;
+  --color-sand-900: #15110d;
+  --color-sand-950: #0c0a07;
+}
+
+/* ---- Light mode: warm paper page, white lifted cards --------------------- */
+:root {
+  --ui-radius: 0.75rem;
+
+  --ui-bg: #f5f1ed;
+  --ui-bg-muted: #efe9df;
+  --ui-bg-elevated: #ffffff;
+  --ui-bg-accented: #e4dccf;
+  --ui-border: #e4dccf;
+  --ui-border-muted: #efe9df;
+  --ui-border-accented: #d3c8b6;
+
+  /* Harmonized traffic-light signals (gauge + status) */
+  --signal-under: #5f9150;
+  --signal-near: #c2812f;
+  --signal-over: #c0413f;
+  --signal-glow: 0 0 0 1px transparent;
+}
+
+/* ---- Dark mode: warm near-black, lifted warm cards ----------------------- */
+.dark {
+  --ui-bg: #0f0d0a;
+  --ui-bg-muted: #15110d;
+  --ui-bg-elevated: #1c1915;
+  --ui-bg-accented: #2a2520;
+  --ui-border: #322c26;
+  --ui-border-muted: #221e19;
+  --ui-border-accented: #423a32;
+
+  --signal-under: #7ec176;
+  --signal-near: #ffa951;
+  --signal-over: #e55c5c;
+}
+
+/* ============================================================================
+   Base + texture
+   ========================================================================= */
+html {
+  color-scheme: light dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--ui-bg);
+  /* faint warm topo/aurora wash behind everything */
+  background-image:
+    radial-gradient(60rem 60rem at 110% -10%, color-mix(in oklab, var(--color-terra-500) 10%, transparent), transparent 60%),
+    radial-gradient(50rem 50rem at -10% 110%, color-mix(in oklab, var(--color-terra-400) 7%, transparent), transparent 55%);
+  background-attachment: fixed;
+}
+
+/* 2% film grain — "carefully unpolished", counters sterile SaaS flatness */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.dark body::before {
+  opacity: 0.05;
+}
+
+/* keep app content above the grain layer */
+#__nuxt {
+  position: relative;
+  z-index: 1;
+}
+
+/* Display face for headings opted-in via .font-display utility (Tailwind exposes it) */
+.font-display {
+  font-variation-settings: 'SOFT' 0, 'WONK' 0;
+  letter-spacing: -0.01em;
+}
+
+/* Tabular figures everywhere we show weights */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

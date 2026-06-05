@@ -6,19 +6,20 @@ const build = useBuildStore()
 
 <template>
   <div v-if="build.customGear.length > 0" class="space-y-2">
-    <h3 class="text-sm font-semibold uppercase tracking-wide text-muted">
+    <h3 class="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-dimmed">
+      <span class="h-px w-4 flex-none bg-primary/40" />
       {{ t('custom.yourItems') }}
     </h3>
-    <ul class="divide-y divide-default rounded-lg border border-default">
+    <ul class="space-y-1.5">
       <li
         v-for="item in build.customGear"
         :key="item.id"
-        class="flex items-center justify-between gap-3 px-3 py-2"
+        class="flex items-center justify-between gap-3 rounded-xl border border-primary/40 bg-primary/5 px-3 py-2"
       >
         <div class="min-w-0">
-          <p class="truncate font-medium">{{ item.name }}</p>
-          <p class="flex items-center gap-2 text-sm text-muted">
-            <span class="tabular-nums">{{ formatKg(item.weightKg) }}</span>
+          <p class="truncate text-sm font-medium">{{ item.name }}</p>
+          <p class="mt-0.5 flex items-center gap-2 text-xs text-muted">
+            <span class="font-mono tabular-nums">{{ formatKg(item.weightKg) }}</span>
             <UBadge color="neutral" variant="soft" size="sm">
               {{ t(`gear.category.${item.category}`) }}
             </UBadge>

@@ -6,6 +6,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/ui',
     '@nuxt/eslint',
+    '@nuxt/fonts',
+    '@nuxtjs/color-mode',
     '@nuxtjs/i18n',
     '@pinia/nuxt',
     'pinia-plugin-persistedstate/nuxt',
@@ -13,6 +15,22 @@ export default defineNuxtConfig({
   ],
 
   css: ['~/assets/css/main.css'],
+
+  // Auto-follow the OS theme; `.dark` class drives Nuxt UI tokens.
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    classSuffix: ''
+  },
+
+  // Provisioned by @nuxt/fonts and wired to the @theme font families in main.css.
+  fonts: {
+    families: [
+      { name: 'Fraunces', provider: 'google', weights: [400, 500, 600, 700], styles: ['normal'] },
+      { name: 'Inter', provider: 'google', weights: [400, 500, 600, 700] },
+      { name: 'JetBrains Mono', provider: 'google', weights: [400, 500, 600, 700] }
+    ]
+  },
 
   // Single source of truth for the app name (used in <title>, header, SEO).
   runtimeConfig: {

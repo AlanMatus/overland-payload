@@ -1,7 +1,9 @@
 {
   "app": {
     "name": "Overland Rig Builder",
-    "tagline": "Plan your build. Stay within your weight limits."
+    "kicker": "Payload-first build planner",
+    "tagline": "Plan your build. Stay within your weight limits.",
+    "disclaimer": "Estimates only — always verify against the plate & a weighbridge."
   },
   "home": {
     "metaTitle": "Payload Calculator",
@@ -10,7 +12,10 @@
   },
   "common": {
     "cancel": "Cancel",
-    "language": "Language"
+    "language": "Language",
+    "theme": "Toggle theme",
+    "lightMode": "Switch to light mode",
+    "darkMode": "Switch to dark mode"
   },
   "builder": {
     "vehicle": "Vehicle",
@@ -83,6 +88,8 @@
     "title": "Payload",
     "totalLaden": "Total laden weight",
     "ofGvwr": "of {gvwr} GVWR",
+    "ofGvwrShort": "of GVWR used",
+    "gaugeLabel": "{percent} of GVWR used — {status}",
     "remaining": "{amount} of payload remaining",
     "overTitle": "Over the weight limit",
     "overBy": "You are {amount} over GVWR. Remove gear or reduce load.",
@@ -102,6 +109,7 @@
     "rear": "Rear axle",
     "max": "max {amount}",
     "over": "Over axle limit",
-    "disclaimer": "Rough estimate from a fixed weight split — not a substitute for a weighbridge."
+    "disclaimer": "Rough estimate from a fixed weight split — not a substitute for a weighbridge.",
+    "noData": "No axle limits published for this vehicle."
   }
 }

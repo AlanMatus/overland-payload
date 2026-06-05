@@ -1,7 +1,9 @@
 {
   "app": {
     "name": "Overland Rig Builder",
-    "tagline": "Naplánujte si zostavu. Zostaňte v rámci hmotnostných limitov."
+    "kicker": "Plánovač zostavy s dôrazom na nosnosť",
+    "tagline": "Naplánujte si zostavu. Zostaňte v rámci hmotnostných limitov.",
+    "disclaimer": "Len odhady — vždy overte podľa štítku a na váhe."
   },
   "home": {
     "metaTitle": "Kalkulačka nosnosti",
@@ -10,7 +12,10 @@
   },
   "common": {
     "cancel": "Zrušiť",
-    "language": "Jazyk"
+    "language": "Jazyk",
+    "theme": "Prepnúť motív",
+    "lightMode": "Prepnúť na svetlý režim",
+    "darkMode": "Prepnúť na tmavý režim"
   },
   "builder": {
     "vehicle": "Vozidlo",
@@ -83,6 +88,8 @@
     "title": "Nosnosť",
     "totalLaden": "Celková hmotnosť s nákladom",
     "ofGvwr": "z {gvwr} GVWR",
+    "ofGvwrShort": "využitia GVWR",
+    "gaugeLabel": "Využitých {percent} GVWR — {status}",
     "remaining": "Zostáva {amount} nosnosti",
     "overTitle": "Prekročený hmotnostný limit",
     "overBy": "Prekročili ste GVWR o {amount}. Odoberte výbavu alebo znížte náklad.",
@@ -102,6 +109,7 @@
     "rear": "Zadná náprava",
     "max": "max. {amount}",
     "over": "Prekročený limit nápravy",
-    "disclaimer": "Hrubý odhad na základe pevného rozloženia hmotnosti — nenahrádza váženie na váhe."
+    "disclaimer": "Hrubý odhad na základe pevného rozloženia hmotnosti — nenahrádza váženie na váhe.",
+    "noData": "Pre toto vozidlo nie sú zverejnené limity náprav."
   }
 }
