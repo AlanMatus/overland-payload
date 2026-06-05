@@ -6,7 +6,7 @@ const build = useBuildStore()
 const { applySharedFromRoute } = useShareBuild()
 
 useSeoMeta({
-  title: () => t('home.title'),
+  title: () => t('home.metaTitle'),
   description: () => t('home.subtitle')
 })
 

@@ -17,7 +17,9 @@ export default defineNuxtConfig({
   // Single source of truth for the app name (used in <title>, header, SEO).
   runtimeConfig: {
     public: {
-      appName: 'Overland Rig Builder'
+      appName: 'Overland Rig Builder',
+      // Keep the locale switcher hidden until the Slovak translation is ready.
+      localeSwitcherEnabled: false
     }
   },
 

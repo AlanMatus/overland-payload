@@ -4,11 +4,13 @@
     "tagline": "Plan your build. Stay within your weight limits."
   },
   "home": {
+    "metaTitle": "Payload Calculator",
     "title": "Overland Rig Builder & Payload Calculator",
     "subtitle": "Pick a vehicle, add your gear, and see in real time whether your rig stays under its legal and safe weight limits."
   },
   "common": {
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "language": "Language"
   },
   "builder": {
     "vehicle": "Vehicle",
